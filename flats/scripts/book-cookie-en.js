@@ -1,5 +1,5 @@
 (function () {
-  const COOKIE_NAME = "bookName";
+  const COOKIE_NAME = "bookNameEN";
   const ONE_YEAR_SEC = 365 * 24 * 60 * 60;
 
   const form = document.getElementById("book-form");
@@ -50,3 +50,4 @@
     showForm(true);
   });
 })();
+
