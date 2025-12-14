@@ -7,26 +7,39 @@
 
 .reveal section {
   display: grid;
-  grid-template-columns: 35% 65%;
+  grid-template-columns: 35% minmax(0, 65%);
   align-items: center;
   gap: 40px;
   text-align: left;
 }
 
 .reveal section h2 {
-  grid-column: 1;
+  text-align: center;
 }
 
 .reveal section ul,
 .reveal section p {
   grid-column: 2;
+  width: 100%;
   border: 2px solid #fd7e14;
   padding: 24px 28px;
   border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.reveal section ul {
+  margin: 0;
+  list-style-type: disc;
+  list-style-position: outside;
+  padding: 24px 28px 24px 48px;
+}
+
+.reveal section li {
+  margin: 10px 0;
 }
 
 .reveal section.slide.level1 h2,
-.reveal section.slide.level1 h4,
+.reveal section.slide.level1 h3,
 .reveal section.slide.level1 p {
   color: #fff;
   display: flex;
@@ -35,6 +48,9 @@
   align-items: center;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.reveal section.slide.level1 h2 {
+  font-size: 100px;
 }
 
 .reveal section.slide.level3 h2,
@@ -47,4 +63,8 @@
   color: #fff;
   border: none;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.reveal section.slide.level3 h2 {
+  font-size: 90px;
 }
