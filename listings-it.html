@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ZeroDepo — Annunci</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/mystyle.css" />
+  </head>
+
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="ZeroDepo-it.html">ZeroDepo</a>
+
+        <div class="d-flex align-items-center gap-2">
+          <a class="btn btn-primary btn-sm" href="host-it.html" id="btn-host"
+            >Sono un Proprietario</a
+          >
+          <div class="btn-group" role="group">
+            <a href="listings-en.html" class="btn btn-outline-primary btn-sm"
+              >EN</a
+            >
+            <a
+              href="listings-it.html"
+              class="btn btn-outline-primary btn-sm active"
+              >IT</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="container py-4">
+      <div class="filters-bar">
+        <div class="row g-2 align-items-center">
+          <div class="col-lg-3">
+            <label class="form-label small mb-1">Disponibilità</label>
+            <div class="d-flex gap-2">
+              <input
+                id="filter-start"
+                type="date"
+                class="form-control form-control-sm"
+              />
+              <input
+                id="filter-end"
+                type="date"
+                class="form-control form-control-sm"
+              />
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <label class="form-label small mb-1">Tipologia</label>
+            <div class="d-flex gap-1">
+              <select class="form-select form-select-sm">
+                <option>Tutte le tipologie</option>
+                <option>Appartamento</option>
+                <option>Monolocale</option>
+                <option>Camera</option>
+                <option>Letto</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <label class="form-label small mb-1">Budget (€)</label>
+            <div class="d-flex gap-2">
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                placeholder="Min"
+                readonly
+              />
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                placeholder="Max"
+                readonly
+              />
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <label class="form-label small mb-1">&nbsp;</label>
+            <div>
+              <button class="btn btn-primary btn-sm w-100">Visualizza</button>
+            </div>
+          </div>
+
+          <div class="col-lg-1 text-end">
+            <label class="form-label small mb-1">&nbsp;</label>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container flex-grow-1 mb-4">
+      <div class="row gy-3">
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-12">
+              <a
+                href="flats/listing-it-1.html"
+                class="text-decoration-none text-body"
+              >
+                <div class="listing-card d-flex gap-3">
+                  <img src="imgs/1/1 (1).jpg" alt="Foto 1" />
+                  <div class="flex-grow-1 d-flex flex-column">
+                    <h5 class="mb-1">Accogliente 1BR vicino al Duomo</h5>
+                    <div class="text-muted small mb-2">
+                      Appartamento · 2 locali · 45 m² · Disponibile dal
+                      17/12/2025
+                    </div>
+                    <p class="mb-2">
+                      Luminoso appartamento con una camera da letto nel centro
+                      storico, a due passi dal Duomo e dai mezzi pubblici.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-auto"
+                    >
+                      <strong>€850</strong>
+                      <span class="badge bg-light text-dark">Milano</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12">
+              <a
+                href="flats/listing-it-2.html"
+                class="text-decoration-none text-body"
+              >
+                <div class="listing-card d-flex gap-3">
+                  <img src="imgs/2/2 (1).jpg" alt="Foto 1" />
+                  <div class="flex-grow-1 d-flex flex-column">
+                    <h5 class="mb-1">Monolocale moderno sui Navigli</h5>
+                    <div class="text-muted small mb-2">
+                      Monolocale · 1 locale · 28 m² · Disponibile dal 25/12/2025
+                    </div>
+                    <p class="mb-2">
+                      Monolocale compatto con vista sul canale, ideale per
+                      studenti.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-auto"
+                    >
+                      <strong>€720</strong>
+                      <span class="badge bg-light text-dark">Milano</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12">
+              <a
+                href="flats/listing-it-3.html"
+                class="text-decoration-none text-body"
+              >
+                <div class="listing-card d-flex gap-3">
+                  <img src="imgs/3/3 (1).jpg" alt="Foto 1" />
+                  <div class="flex-grow-1 d-flex flex-column">
+                    <h5 class="mb-1">Bilocale vicino a Centrale</h5>
+                    <div class="text-muted small mb-2">
+                      Appartamento · 3 locali · 70 m² · Disponibile dal
+                      01/01/2026
+                    </div>
+                    <p class="mb-2">
+                      Appartamento spazioso vicino alla stazione Milano
+                      Centrale.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-auto"
+                    >
+                      <strong>€1,100</strong>
+                      <span class="badge bg-light text-dark">Milano</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12">
+              <a
+                href="flats/listing-it-4.html"
+                class="text-decoration-none text-body"
+              >
+                <div class="listing-card d-flex gap-3">
+                  <img src="imgs/4/4 (1).jpg" alt="Foto 1" />
+                  <div class="flex-grow-1 d-flex flex-column">
+                    <h5 class="mb-1">
+                      Stanza singola in appartamento condiviso, Brera
+                    </h5>
+                    <div class="text-muted small mb-2">
+                      Camera · 1 locale · 12 m² · Disponibile dal 01/01/2026
+                    </div>
+                    <p class="mb-2">
+                      Camera privata in appartamento condiviso nel quartiere di
+                      Brera.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-auto"
+                    >
+                      <strong>€450</strong>
+                      <span class="badge bg-light text-dark">Milano</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12">
+              <a
+                href="flats/listing-it-5.html"
+                class="text-decoration-none text-body"
+              >
+                <div class="listing-card d-flex gap-3">
+                  <img src="imgs/5/5 (1).jpg" alt="Foto 1" />
+                  <div class="flex-grow-1 d-flex flex-column">
+                    <h5 class="mb-1">Grande loft vicino a Porta Genova</h5>
+                    <div class="text-muted small mb-2">
+                      Appartamento · 4 locali · 120 m² · Disponibile dal
+                      01/03/2026
+                    </div>
+                    <p class="mb-2">
+                      Loft di design con mattoni a vista, ideale per famiglie.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-auto"
+                    >
+                      <strong>€1,400</strong>
+                      <span class="badge bg-light text-dark">Milano</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="col-map">
+            <div class="ratio ratio-4x3 rounded overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps?q=Milan,+Italy&z=12&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                style="border: 0"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-light py-4 mt-auto">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
+      >
+        <div class="mb-2 mb-md-0">
+          <strong>ZeroDepo</strong> — Alloggio senza deposito
+        </div>
+
+        <div class="demo-note text-center py-2">
+          <small>
+            Questa è una versione demo.<br />
+            Tutte le foto sono state scattate da:
+            <a
+              href="https://www.peredelka.tv/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >https://www.peredelka.tv/</a
+            >
+          </small>
+        </div>
+
+        <div>
+          <a href="#" class="me-3">Lavora con noi</a>
+          <a href="#" class="me-3">FAQ</a>
+          <a href="#" class="me-3">Instagram</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

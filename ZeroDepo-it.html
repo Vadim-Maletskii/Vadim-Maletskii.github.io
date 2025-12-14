@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ZeroDepo — Trova una casa senza deposito</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/mystyle.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="ZeroDepo-it.html">ZeroDepo</a>
+        <div class="d-flex align-items-center gap-2">
+          <a class="btn btn-primary btn-sm" href="host-it.html" id="btn-host"
+            >Sono un Proprietario</a
+          >
+          <div class="btn-group" role="group">
+            <a href="index.html" class="btn btn-outline-primary btn-sm">EN</a>
+            <a
+              href="ZeroDepo-it.html"
+              class="btn btn-outline-primary btn-sm active"
+              >IT</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero-bg py-5">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-7">
+            <h1 id="hero-title" class="text-white">
+              Trova una casa senza deposito
+            </h1>
+            <p class="lead text-white" id="hero-sub">
+              ZeroDepo mette in contatto inquilini e proprietari — nessun
+              deposito rimborsabile. L'assicurazione sostituisce il deposito per
+              i danni coperti.
+            </p>
+
+            <div class="mb-3 position-relative" style="max-width: 480px">
+              <label for="city-search" class="form-label visually-hidden"
+                >Search by city</label
+              >
+              <div class="input-group">
+                <input
+                  id="city-search"
+                  type="search"
+                  class="form-control"
+                  placeholder="Search by city (e.g. Milan)"
+                  list="cities"
+                />
+                <datalist id="cities">
+                  <option value="Milano"></option>
+                  <option value="Roma"></option>
+                  <option value="Torino"></option>
+                  <option value="Venezia"></option>
+                  <option value="Firenze"></option>
+                </datalist>
+
+                <button id="search-btn" class="btn btn-primary">Cerca</button>
+              </div>
+              <div id="search-hint" class="form-text text-white">
+                Prova: Milano, Roma, Torino, Venezia, Firenze
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="py-4">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="feature-card h-100">
+              <h5 id="f1-title">Nessun deposito</h5>
+              <p id="f1-desc" class="mb-0">
+                Annunci dove il deposito è sostituito da accordi assicurativi
+                diretti.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="feature-card h-100">
+              <h5 id="f2-title">Annunci verificati</h5>
+              <p id="f2-desc" class="mb-0">
+                Il nostro team verifica ogni proprietà — foto, 3D e inventario
+                per l'assicuratore.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="feature-card h-100">
+              <h5 id="f3-title">Pagamenti flessibili</h5>
+              <p id="f3-desc" class="mb-0">
+                L'assicurazione può essere divisa mensilmente; una piccola somma
+                non rimborsabile copre danni minori.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-light py-4 mt-auto">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
+      >
+        <div class="mb-2 mb-md-0">
+          <strong>ZeroDepo</strong> — Alloggio senza deposito
+        </div>
+        <div>
+          <a href="#" class="me-3">Lavora con noi</a>
+          <a href="#" class="me-3">FAQ</a>
+          <a href="#" class="me-3">Instagram</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/search-it.js"></script>
+  </body>
+</html>

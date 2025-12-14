@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+.hero-bg {
+  background-image: url("../imgs/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-bg > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-bg {
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
+}
+
+.hero-bg #hero-title {
+  text-shadow: none;
+}
+
+.feature-card {
+  background: #fff;
+  border: 0.1rem solid #fd7e14;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+}
+
+.feature-card:hover {
+  background: rgba(247, 116, 9, 0.06);
+  transform: translateY(-0.1rem);
+}
+
+.btn-primary {
+  --bs-btn-bg: #fd7e14;
+  --bs-btn-border-color: #fd7e14;
+
+  --bs-btn-hover-bg: #e96b00;
+  --bs-btn-hover-border-color: #e96b00;
+
+  --bs-btn-active-bg: #d86200;
+  --bs-btn-active-border-color: #d86200;
+
+  --bs-btn-disabled-bg: #fd7e14;
+  --bs-btn-disabled-border-color: #fd7e14;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #fd7e14;
+  --bs-btn-border-color: #fd7e14;
+
+  --bs-btn-hover-bg: #fd7e14;
+  --bs-btn-hover-border-color: #fd7e14;
+
+  --bs-btn-active-bg: #e96b00;
+  --bs-btn-active-border-color: #e96b00;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #fd7e14;
+  box-shadow: 0 0 0 0.25rem rgba(253, 126, 20, 0.25);
+}
+
+#city-search::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+footer {
+  box-shadow: 0 -0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  position: relative;
+}
+
+footer a,
+footer a:visited {
+  color: #fd7e14;
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #e96b00;
+  text-decoration: underline;
+}
+
+.listing-card {
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.listing-card img {
+  width: 240px !important;
+  height: 160px !important;
+  flex: 0 0 240px !important;
+  object-fit: cover !important;
+  display: block !important;
+  border-radius: 0.5rem;
+}
+
+.listing-card p {
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.filters-bar {
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.05);
+}
+
+.filters .form-control,
+.filters .form-check {
+  margin-bottom: 0.5rem;
+}
+
+.col-map {
+  position: sticky;
+  top: 1rem;
+  bottom: 1rem;
+}
