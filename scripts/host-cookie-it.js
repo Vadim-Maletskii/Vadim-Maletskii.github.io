@@ -1,5 +1,5 @@
 (function () {
-  const COOKIE_NAME = "hostNameEN";
+  const COOKIE_NAME = "hostNameIT";
   const ONE_YEAR_SEC = 365 * 24 * 60 * 60;
 
   const form = document.getElementById("host-form");
@@ -50,3 +50,4 @@
     showForm(true);
   });
 })();
+
