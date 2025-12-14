@@ -14,7 +14,7 @@
     }
 
     if (key === "milan" || key === "milano") {
-      window.location.href = "listings-it.html";
+      window.location.href = "listings-en.html";
     } else {
       window.location.href = "not-available-en.html";
     }
